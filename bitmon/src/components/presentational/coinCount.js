@@ -1,3 +1,6 @@
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 export const CoinCount = ({ balance, isConnected }) => {
     balance = (isConnected) ? balance : '¯\\_(ツ)_/¯'
     return (

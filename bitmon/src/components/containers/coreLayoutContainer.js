@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
 import CoreLayout from '../presentational/coreLayout';
 import { connect } from 'react-redux'
 import { web3Connect } from '../../actions/web3Connect';
+import { getBalance } from '../../actions/balance';
 
 const mapDispatchToProps = {
-  web3Connect
+  web3Connect,
+  getBalance
 }
 
 const mapStateToProps = (state) => ({
